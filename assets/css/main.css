@@ -1,0 +1,369 @@
+:root {
+  --white: #ffffff;
+  --black: #222222;
+  --gray: #777777;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial";
+}
+
+.container {
+  margin: 0 auto;
+  width: 68%;
+  height: 100%;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  transition: .3s;
+  color: #fed136;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .mr-auto {
+    margin-right: 0;
+  }
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .ml-auto {
+    margin-left: 0;
+  }
+}
+
+.ta-left {
+  text-align: left !important;
+}
+
+@media screen and (max-width: 500px) {
+  .ta-left {
+    text-align: center !important;
+  }
+}
+
+.header {
+  height: 700px;
+  padding-top: 50px;
+  background: url(../img/first-bg.png) no-repeat center/cover;
+}
+
+.header .nav {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .nav .menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.header .nav .menu .nav-item {
+  display: inline;
+  align-self: center;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: var(--white);
+  list-style: none;
+}
+
+.header .htitle {
+  margin-top: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.header .htitle .htitle-little {
+  font-size: 2.500em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.header .htitle .htitle-big {
+  font-size: 4.688em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.header .htitle .htitle-btn {
+  width: 240px;
+  height: 65px;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  color: #484543;
+  background: #fed136;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.serv {
+  padding: 120px 0;
+}
+
+.serv .stitle {
+  text-align: center;
+}
+
+.serv .stitle .stitle-big {
+  margin-bottom: 0;
+  font-size: 2.500em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.serv .stitle .stitle-text {
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.serv .sitems {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+}
+
+.serv .sitems .sitem {
+  width: 25%;
+}
+
+.serv .sitems .sitem .sitem-title {
+  font-size: 1.125em;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.serv .sitems .sitem .sitem-text {
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 25px;
+  color: var(--gray);
+}
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 130px;
+  background: #f7f7f7;
+}
+
+.portfolio .ptitle {
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio .ptitle .ptitle-big {
+  margin-bottom: 0;
+  font-size: 2.500em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.portfolio .ptitle .ptitle-text {
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.portfolio .img-block {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.portfolio .img-block .img-block {
+  display: block;
+  width: 30%;
+}
+
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.about .atitle {
+  width: 100%;
+  text-align: center;
+}
+
+.about .atitle .atitle-big {
+  margin-bottom: 0;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.about .atitle .atitle-text {
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--gray);
+}
+
+.about .aitems .aitem {
+  display: flex;
+  margin-top: 90px;
+  width: 58.5%;
+}
+
+.about .aitems .aitem .aitem-block .date {
+  display: block;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.about .aitems .aitem .aitem-block .item-title {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-align: right;
+}
+
+.about .aitems .aitem .aitem-block .item-text {
+  display: block;
+  width: 55%;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--gray);
+  text-align: right;
+  line-height: 25px;
+}
+
+.about .aitems .aitem .aitem-img {
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  align-self: center;
+}
+
+.footer {
+  padding-bottom: 100px;
+}
+
+.footer .copy {
+  text-align: center;
+}
+
+@media screen and (max-width: 1700px) {
+  .about .aitems .aitem-block .item-text {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header .nav .menu {
+    width: 70%;
+  }
+  .about .aitems .aitem {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  .header {
+    height: auto;
+    padding-bottom: 160px;
+  }
+  .serv .sitems {
+    display: flex;
+    flex-direction: column;
+  }
+  .serv .sitems .sitem {
+    margin-bottom: 30px;
+    width: 100%;
+    align-self: center;
+  }
+  .portfolio .img-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio .img-block .block-img {
+    margin-bottom: 30px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .header .nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+  .header .nav .logo {
+    margin-bottom: 20px;
+    align-self: center;
+  }
+  .header .nav .menu {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .htitle .htitle-little {
+    font-size: 2em;
+  }
+  .header .htitle .htitle-big {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header .nav .menu .nav-item {
+    padding: 5px;
+  }
+  .about .aitems .aitem {
+    flex-direction: column-reverse;
+  }
+  .about .aitems .aitem .aitem-block .date,
+  .about .aitems .aitem .aitem-block .item-title,
+  .about .aitems .aitem .aitem-block .item-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .header .htitle {
+    margin-top: 100px;
+  }
+  .header .htitle .htitle-little {
+    font-size: 1.8em;
+  }
+  .header .htitle .htitle-big {
+    font-size: 3.5em;
+  }
+}
