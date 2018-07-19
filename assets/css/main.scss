@@ -1,0 +1,126 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --color : #E31B6D;
+}
+body {
+    font-family: "Raleway";
+}
+
+a {
+    color: inherit;
+
+    &:hover {
+        color: var(--color);
+    }
+}
+
+.color {
+    font-weight: 600;
+    color: var(--color);
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: #252934;
+
+    .header-block {
+        position: absolute;
+        top: 37%;
+        left: 0;
+
+        .header-title {
+            font-size: 2.6em;
+            text-align: center;
+            color: var(--white);
+        }
+    
+        .header-text {
+            display: block;
+            font-size: 2.6em;
+            text-align: center;
+            color: var(--white);
+        }
+    }
+}
+
+// Menu 
+
+.menu {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: #1B242F;
+
+    .nav {
+
+        .nav-item {
+            text-transform: uppercase;
+            color: var(--white);
+
+            &:hover a {
+                transition: .3s;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// About
+
+.about {
+    padding-top: 100px;
+
+    .about-main {
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .about-hr {
+        width: 10%;
+        height: 4px;
+        background: #000;
+    }
+
+    .about-block {
+        margin-top: 100px;
+
+        .my-ava {
+            margin-bottom: 40px;
+            display: block;
+            font-size: 1.5em;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .ava {
+            width: 300px;
+            align-self: center;
+            border-radius: 30px;
+        }
+
+        .skills {
+            
+            #skill-1,
+            #skill-2,
+            #skill-3,
+            #skill-4 {
+                width: 100%;
+                height: 50px;
+                background: #663AB6;
+                margin-bottom: 10px;
+            }
+
+            .before-bar {
+                width: 20%;
+            }
+
+            #myBar {
+                width: 80%;
+                height: 100%;
+                background-color: green;
+            }
+        }
+    }
+}
