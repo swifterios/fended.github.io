@@ -7,13 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.min.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
     <title>Portfolo - FENDed</title>
   </head>
-  <body onload="move();">
+  <body onload="move(); move2(); move3();">
     
     <div id="particles-js" class="header">
       <div class="container">
@@ -49,21 +51,122 @@
             <h2 class="about-main">About me</h2>
             <div class="about-hr m-auto"></div>
           </div>
-          <div class="col-lg-12 about-block d-flex">
-            <div class="col-lg-6 d-flex flex-column">
+          <div class="col-lg-12 about-block d-flex flex-wrap">
+            <div class="col-lg-6 col-12 d-flex flex-column">
               <span class="my-ava">My avatar</span>
               <img src="assets/img/ava.jpg" alt="" class="ava">
-              <p></p>
+              <p class="ava-text">If you will see this avatar, know: it is I'm.</p>
             </div>
-            <div class="col-lg-6 skills">
-              <div id="skill-1">
-                  <div class="before-bar">HTML5</div>
-                  <div id="myBar"></div>
+            <div class="col-lg-6 col-12 skills">
+              <div id="skill-1 d-flex">
+                <div id="myBar-1"><span class="skill-text">HTML</span></div>
               </div>
-              <div id="skill-2">CSS</div>
-              <div id="skill-3">JavaScript</div>
-              <div id="skill-4">Adaptive</div>
+              <div id="skill-2 d-flex">
+                <div id="myBar-2"><span class="skill-text">CSS</span></div>
+              </div>
+              <div id="skill-3 d-flex">
+                <div id="myBar-3"><span class="skill-text">JavaScript</span></div>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-12 advantages d-flex flex-wrap">
+            <div class="col-12 my-web">
+              My websites are:
+            </div>
+            <div class="col-lg-6 adv-item">
+              <i class="fa fa-mobile"></i>
+              <h3 class="adv-title">Responsive</h3>
+              <p class="adv-text">All my websites are adaptive. You can watch them at any device: computer, laptop, tablet or phone.</p>
+              <div class="line"></div>
+            </div>
+            <div class="col-lg-6 adv-item">
+              <i class="fa fa-rocket"></i>
+              <h3 class="adv-title">Fast-loaded</h3>
+              <p class="adv-text">All my websites are very easy to load. You can load it from low or high Internet: it is not a problem.</p>
+              <div class="line"></div>
+            </div>
+            <div class="col-12 my-web">
+              I'm are: 
+            </div>
+            <div class="col-lg-6 adv-item">
+              <i class="fa fa-book"></i>
+              <h3 class="adv-title">Educable</h3>
+              <p class="adv-text">I can quickly learn anything that connected with front-end development.</p>
+              <div class="line"></div>
+            </div>
+            <div class="col-lg-6 adv-item">
+              <i class="fa fa-comment"></i>
+              <h3 class="adv-title">Communicative</h3>
+              <p class="adv-text">I can tell about all types of websites, I can help you with any problems on your website. Only write me.</p>
+              <div class="line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="quote">
+      <div class="container">
+        <div class="row">
+          <q class="q">Your future is created by what you do today, not tomorrow.</q>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="works">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="works-main">My Works</h2>
+            <div class="works-hr m-auto"></div>
+          </div>
+          <div class="col-12 works-block d-flex flex-wrap">
+            <a href="/golden" class="col-lg-6 work-item" id="work-item-1"></a>
+            <a href="/golden" class="col-lg-6 work-item" id="work-item-2"></a>
+            <a href="/golden" class="col-lg-6 work-item" id="work-item-3"></a>
+            <a href="/golden" class="col-lg-6 work-item" id="work-item-4"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="feedback" class="feedback">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="feedback-main">Contact Me</h2>
+            <div class="feedback-hr m-auto"></div>
+          </div>
+          <div class="col-12">
+            <h2 class="ready">
+              Ready to contact me?
+              <br>
+              Just do it!
+            </h2>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYIJ-ZRxATrW9KKHovd3C_4Jjg99sRUByN9_1b9eaQz0lgqw/alreadyresponded?c=0&amp" target="_blank"><button class="feed-btn">Contact me</button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-2">
+        <div class="container">
+          <div class="row">
+            <q class="q">Success doesn’t come to you… you go to it.</q>
+          </div>
+        </div>
+      </section>
+
+    <section id="social" class="social">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 soc-ico">
+            <a href="https://vk.com/l.drel" target="_blank"><i class="fa fa-vk"></i></a>
+            <a href="https://github.com/FENDed" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://codepen.io/FENDed/" target="_blank"><i class="fa fa-codepen"></i></a>
+          </div>
+          <div class="col-12 copy">
+            Developed by <a href="https://vk.com/l.drel" class="copy-link">FENDed</a> &copy; 2018
           </div>
         </div>
       </div>
@@ -75,7 +178,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/particles.min.js"></script>\
+    <script src="assets/js/particles.min.js"></script>
     <script src="assets/js/progressbars.js"></script>
+    <script src="assets/js/stickymenu.js"></script>
   </body>
 </html>

@@ -1,7 +1,8 @@
 :root {
-    --white: #ffffff;
-    --black: #000000;
+    --white : #ffffff;
+    --black : #000000;
     --color : #E31B6D;
+    --scolor: #FE9700;
 }
 body {
     font-family: "Raleway";
@@ -11,6 +12,7 @@ a {
     color: inherit;
 
     &:hover {
+        text-decoration: none;
         color: var(--color);
     }
 }
@@ -51,6 +53,7 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
     background: #1B242F;
+    border-bottom: 3px solid var(--scolor);
 
     .nav {
 
@@ -80,14 +83,14 @@ a {
     .about-hr {
         width: 10%;
         height: 4px;
-        background: #000;
+        background: var(--black);
     }
 
     .about-block {
         margin-top: 100px;
 
         .my-ava {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             display: block;
             font-size: 1.5em;
             font-weight: 600;
@@ -100,27 +103,255 @@ a {
             border-radius: 30px;
         }
 
+        .ava-text {
+            margin-top: 20px;
+            text-align: center;
+        }
+
         .skills {
-            
+            padding-top: 5%;
+
             #skill-1,
             #skill-2,
             #skill-3,
             #skill-4 {
-                width: 100%;
                 height: 50px;
-                background: #663AB6;
-                margin-bottom: 10px;
             }
 
-            .before-bar {
-                width: 20%;
-            }
-
-            #myBar {
-                width: 80%;
+            #myBar-1,
+            #myBar-2,
+            #myBar-3 {
+                margin-bottom: 25px;
+                display: block;
+                width: 100%;
                 height: 100%;
-                background-color: green;
+                padding: 10px;
+                font-weight: bold;
+                background-color: var(--scolor);
             }
+        }
+    }
+
+    .advantages {
+
+        .my-web {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 2em;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .adv-item {
+
+            &:hover {
+
+                .line {
+                    animation-name: rightline;
+                    animation-duration: .7s;
+                    animation-timing-function: linear;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            .fa {
+                display: block;
+                text-align: center;
+                font-size: 3em;
+                color: var(--scolor);
+            }
+
+            .adv-title {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 2em;
+                letter-spacing: 2px;
+                text-align: center;
+            }
+
+            .adv-text {
+                text-align: center;
+            }
+
+            .line {
+                width: 5%;
+                background: var(--scolor);
+                height: 3px;
+            }
+        }
+    }
+}
+
+@keyframes rightline {
+    0% {
+        width: 5%;
+        height: 3px;
+        background: var(--scolor);
+    }
+
+    100% {
+        width: 100%;
+        height: 3px;
+        background: var(--scolor);
+    }
+}
+
+// Quotes
+
+.quote {
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    background: #1B242F;
+
+    .q {
+        width: 100%;
+        font-size: 1.1em;
+        color: var(--white);
+    }
+}
+
+// Works
+
+.works {
+    padding-top: 100px;
+
+    .works-main {
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .works-hr {
+        width: 10%;
+        height: 4px;
+        background: var(--black);
+    }
+
+    .works-block {
+        margin-top: 100px;
+
+        .work-item {
+            display: block;
+            height: 300px;
+            
+            &:hover {
+                transition: .5s;
+                box-shadow: inset 0 0 0 23px rgba(0,0,0, .5);
+                cursor: pointer;
+            }
+        }
+
+        #work-item-1 {
+            background: url(../img/work-1.PNG) no-repeat center;
+            background-size: cover;
+        }
+
+        #work-item-2 {
+            background: url(../img/work-2.PNG) no-repeat center;
+            background-size: cover;
+        }
+
+        #work-item-3 {
+            background: url(../img/work-3.PNG) no-repeat center;
+            background-size: cover;
+        }
+
+        #work-item-4 {
+            background: url(../img/work-4.PNG) no-repeat center;
+            background-size: cover;
+        }
+    }
+}
+
+// FeedBack
+
+.feedback {
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #1B242F;
+
+    .feedback-main {
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--white);
+    }
+
+    .feedback-hr {
+        width: 10%;
+        height: 4px;
+        background: var(--white);
+    }
+
+    .ready {
+        margin-top: 80px;
+        color: var(--white);
+    }
+
+    .feed-btn {
+        margin: 80px auto 0 auto;
+        display: flex;
+        background: none;
+        padding: 20px 40px;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--white);
+        border: 2px solid var(--color);
+
+        &:hover {
+            transition: .5s;
+            color: var(--color);
+            border: 2px solid var(--white);
+            cursor: pointer;
+        }
+    }
+}
+
+// Quote-2 
+
+.quote-2 {
+    padding: 50px;
+    text-align: center;
+    background: var(--white);
+
+    .q {
+        width: 100%;
+        font-size: 1.1em;
+        color: var(--black);
+    }
+}
+
+// Social
+
+.social {
+    padding-top: 50px;
+    background: #1B242F;
+
+    .soc-ico {
+        text-align: center;
+
+        .fa {
+            font-size: 2em;
+            margin-right: 40px;
+            color: var(--white);
+    
+            &:hover {
+                color: var(--color);
+                transition: .5s;
+            }
+        }
+    }
+
+    .copy {
+        margin-top: 50px;
+        color: var(--white);
+
+        .copy-link {
+            color: var(--color);
         }
     }
 }
