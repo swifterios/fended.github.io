@@ -85,6 +85,10 @@ a {
     background: #1B242F;
     border-bottom: 3px solid var(--scolor);
 
+    .mmenu {
+        display: none;
+    }
+
     .nav {
 
         .nav-item {
@@ -98,6 +102,21 @@ a {
         }
     }
 }
+
+// Sticky menu
+
+.headhesive {
+    position: fixed;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: .5s;
+    z-index: 1;
+}
+
+.headhesive--stick {
+    transform: translateY(0);
+}
+
 
 // About
 
@@ -374,6 +393,10 @@ a {
                 transition: .5s;
             }
         }
+
+        .fa-codepen {
+            margin-right: 0;
+        }
     }
 
     .copy {
@@ -382,6 +405,99 @@ a {
 
         .copy-link {
             color: var(--color);
+        }
+    }
+}
+
+// Media    
+
+@media screen and (max-width: 600px) {
+
+    .header {
+
+        .header-block {
+            top: 30%;
+
+            .header-text {
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .works {
+
+        .container {
+
+            .works-block {
+                padding: 0;
+
+                .work-item {
+                    padding: 0;
+                }
+
+                #work-item-1 {
+                    background-position: 45%;
+                }
+                
+                #work-item-2 {
+                    background-position: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .menu {
+
+        .nav {
+            display: none !important;
+        }
+
+        .mmenu {
+            display: block;
+
+            .dropdown-toggle {
+                display: block;
+                font-size: 1.1em;
+                font-weight: 600;
+                color: var(--white);
+                text-align: center;
+            }
+
+            .dropdown-menu {
+                width: 100%;
+                text-align: center;
+
+                .dropdown-item {
+                    margin-bottom: 10px;
+                    font-size: 1.1em;
+                    font-weight: 600;
+
+                    &:hover {
+                        background: #252934;
+                        color: var(--color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .works {
+
+        .works-block {
+            
+            #work-item-1 {
+                background-position: 40% !important;
+            }
+
+            #work-item-3 {
+                background-position: 30%;
+            }
         }
     }
 }

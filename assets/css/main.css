@@ -83,6 +83,10 @@ a:hover {
   border-bottom: 3px solid var(--scolor);
 }
 
+.menu .mmenu {
+  display: none;
+}
+
 .menu .nav .nav-item {
   text-transform: uppercase;
   color: var(--white);
@@ -91,6 +95,18 @@ a:hover {
 .menu .nav .nav-item:hover a {
   transition: .3s;
   text-decoration: none;
+}
+
+.headhesive {
+  position: fixed;
+  width: 100%;
+  transform: translateY(-100%);
+  transition: .5s;
+  z-index: 1;
+}
+
+.headhesive--stick {
+  transform: translateY(0);
 }
 
 .about {
@@ -349,6 +365,10 @@ a:hover {
   transition: .5s;
 }
 
+.social .soc-ico .fa-codepen {
+  margin-right: 0;
+}
+
 .social .copy {
   margin-top: 50px;
   color: var(--white);
@@ -356,4 +376,66 @@ a:hover {
 
 .social .copy .copy-link {
   color: var(--color);
+}
+
+@media screen and (max-width: 600px) {
+  .header .header-block {
+    top: 30%;
+  }
+  .header .header-block .header-text {
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .works .container .works-block {
+    padding: 0;
+  }
+  .works .container .works-block .work-item {
+    padding: 0;
+  }
+  .works .container .works-block #work-item-1 {
+    background-position: 45%;
+  }
+  .works .container .works-block #work-item-2 {
+    background-position: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .menu .nav {
+    display: none !important;
+  }
+  .menu .mmenu {
+    display: block;
+  }
+  .menu .mmenu .dropdown-toggle {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: var(--white);
+    text-align: center;
+  }
+  .menu .mmenu .dropdown-menu {
+    width: 100%;
+    text-align: center;
+  }
+  .menu .mmenu .dropdown-menu .dropdown-item {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+  .menu .mmenu .dropdown-menu .dropdown-item:hover {
+    background: #252934;
+    color: var(--color);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .works .works-block #work-item-1 {
+    background-position: 40% !important;
+  }
+  .works .works-block #work-item-3 {
+    background-position: 30%;
+  }
 }
