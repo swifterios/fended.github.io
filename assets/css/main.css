@@ -42,10 +42,38 @@ a:hover {
 }
 
 .header .header-block .header-text {
+  margin-bottom: 2%;
   display: block;
   font-size: 2.6em;
   text-align: center;
   color: var(--white);
+}
+
+.header .header-block .btn-block {
+  text-align: center;
+}
+
+.header .header-block .btn-block .header-btn {
+  padding: 15px 20px;
+  color: var(--white);
+  border: 2px solid var(--white);
+}
+
+.header .header-block .btn-block .header-btn:hover {
+  color: var(--black);
+  background: var(--scolor);
+  border: 2px solid #252934;
+  transition: .5s;
+}
+
+.header .header-block .btn-block .header-btn:hover .fa {
+  color: var(--black);
+  transition: .5s;
+  transform: rotate(90deg);
+}
+
+.header .header-block .btn-block .header-btn .fa {
+  margin-left: 10px;
 }
 
 .menu {
