@@ -350,6 +350,7 @@ a {
         text-transform: uppercase;
         color: var(--white);
         border: 2px solid var(--color);
+        outline: none;
 
         &:hover {
             transition: .5s;

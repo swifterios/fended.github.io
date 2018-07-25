@@ -324,6 +324,7 @@ a:hover {
   text-transform: uppercase;
   color: var(--white);
   border: 2px solid var(--color);
+  outline: none;
 }
 
 .feedback .feed-btn:hover {
