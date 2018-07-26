@@ -4,7 +4,10 @@
     --color : #E31B6D;
     --scolor: #FE9700;
 }
+
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: "Raleway";
 }
 
@@ -32,7 +35,6 @@ a {
     .header-block {
         position: absolute;
         top: 37%;
-        left: 0;
 
         .header-title {
             font-size: 2.6em;
@@ -122,6 +124,7 @@ a {
 
 .about {
     padding-top: 100px;
+    overflow: hidden;
 
     .about-main {
         font-weight: bold;
@@ -264,6 +267,7 @@ a {
 
 .works {
     padding-top: 100px;
+    overflow: hidden;
 
     .works-main {
         font-weight: bold;
@@ -410,17 +414,20 @@ a {
     }
 }
 
-// Media    
 
 @media screen and (max-width: 600px) {
 
     .header {
 
         .header-block {
-            top: 30%;
+
+            .header-title {
+                font-size: 30px;
+            }
 
             .header-text {
                 margin-bottom: 5%;
+                font-size: 30px;
             }
         }
     }
@@ -444,6 +451,29 @@ a {
                 
                 #work-item-2 {
                     background-position: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .header {
+
+        .header-block {
+
+            .header-title {
+                font-size: 25px;
+            }
+
+            .header-text {
+                margin-bottom: 20px;
+                font-size: 25px;
+            }
+
+            .btn-block {
+                .header-btn {
+                    padding: 10px 15px;
                 }
             }
         }
@@ -488,6 +518,20 @@ a {
 }
 
 @media screen and (max-width: 350px) {
+    .header {
+
+        .header-block {
+
+            .header-title {
+                font-size: 20px;
+            }
+
+            .header-text {
+                font-size: 20px;
+            }
+        }
+    }
+    
     .works {
 
         .works-block {

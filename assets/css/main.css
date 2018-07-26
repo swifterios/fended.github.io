@@ -6,6 +6,8 @@
 }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: "Raleway";
 }
 
@@ -32,7 +34,6 @@ a:hover {
 .header .header-block {
   position: absolute;
   top: 37%;
-  left: 0;
 }
 
 .header .header-block .header-title {
@@ -111,6 +112,7 @@ a:hover {
 
 .about {
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .about .about-main {
@@ -239,6 +241,7 @@ a:hover {
 
 .works {
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .works .works-main {
@@ -380,11 +383,12 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .header .header-block {
-    top: 30%;
+  .header .header-block .header-title {
+    font-size: 30px;
   }
   .header .header-block .header-text {
     margin-bottom: 5%;
+    font-size: 30px;
   }
 }
 
@@ -400,6 +404,19 @@ a:hover {
   }
   .works .container .works-block #work-item-2 {
     background-position: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .header .header-block .header-title {
+    font-size: 25px;
+  }
+  .header .header-block .header-text {
+    margin-bottom: 20px;
+    font-size: 25px;
+  }
+  .header .header-block .btn-block .header-btn {
+    padding: 10px 15px;
   }
 }
 
@@ -433,6 +450,12 @@ a:hover {
 }
 
 @media screen and (max-width: 350px) {
+  .header .header-block .header-title {
+    font-size: 20px;
+  }
+  .header .header-block .header-text {
+    font-size: 20px;
+  }
   .works .works-block #work-item-1 {
     background-position: 40% !important;
   }
