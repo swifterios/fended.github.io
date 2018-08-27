@@ -1,0 +1,378 @@
+@font-face {
+    font-family: 'Nova Semi';
+    src: url(../fonts/ProximaNova-Semibold.ttf);
+}
+
+@font-face {
+    font-family: 'Nova Exb';
+    src: url(../fonts/ProximaNova-Extrabld.ttf);
+}
+
+@font-face {
+    font-family: 'Nova L';
+    src: url(../fonts/ProximaNova-LightIt.ttf);
+}
+
+@font-face {
+    font-family: 'Nova';
+    src: url(../fonts/ProximaNova-RegularIt.ttf);
+}
+
+@font-face {
+    font-family: 'Nova Bold';
+    src: url(../fonts/ProximaNova-Bold.ttf);
+}
+
+:root {
+    --white: #ffffff;
+    --black: #111111;
+    --red: #d13f4a;
+}
+
+body {
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: inherit;
+
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+// Header
+
+.header {
+    padding: 35px 0;
+    color: var(--white);
+    background: var(--black);
+
+    .logo {
+        font-family: 'Nova Semi';
+
+        .name {
+            font-size: 1.063em;
+        }
+
+        .title {
+            font-size: 0.750em;
+        }
+    }
+
+    .nav {
+            
+        .nav-item {
+            align-self: center;
+            color: var(--white);
+
+            a {
+                font-family: 'Nova Bold';
+                font-size: 0.875em;
+            }
+        }
+    }
+}
+
+// Latest news 
+
+.lnews-sec {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    .lnews-block {
+        color: var(--white);
+
+        .lnews {
+            margin: 0 auto;
+            padding: 10px 22px;
+            font-family: 'Nova Bold';
+            font-size: 0.938em;
+            text-align: center;
+            background: var(--red);
+            border-radius: 5px 5px 0 0;
+        }
+
+        .lnews-title {
+            margin: 0 auto;
+            padding: 10px 22px;
+            font-family: 'Nova Exb';
+            font-size: 1.750em;
+            text-align: center;
+            background: var(--black);
+        }
+
+        .lnews-disc {
+            margin: 0 auto;
+            padding: 13px 17px;
+            font-family: 'Nova Semi';
+            font-size: 0.875em;
+            background: rgba(#111111, $alpha: .8)
+        }
+    }
+}
+
+// News
+
+.news-sec {
+
+    .news {
+        background-color: var(--white);
+
+        .latest-news {
+            margin-bottom: 12px;
+            display: block;
+            padding: 25px 18px;
+            background: #f3f3f3;
+            font-family: 'Nova Bold';
+            font-size: 1.125em;
+            color: #999999;
+        }
+
+        .news-block {
+
+            .news-img {
+                margin: 0 auto;
+                margin-top: 12px;
+                margin-bottom: 30px;
+                display: block;
+            }
+
+            .news-title {
+                font-family: 'Nova Semi';
+                font-size: 1.313em;
+            }
+
+            .news-disc {
+                font-family: 'Nova';
+                font-size: 0.813em;
+                color: #484848;
+            }
+
+            .content {
+
+                .news-social {
+
+                    .date,
+                    .like,
+                    .views,
+                    .twitter {
+                        margin-top: 4px;
+                        align-items: center;
+                        width: 76px;
+                        height: 16px;
+                        padding: 0 6px;
+                        font-size: 'Nova Bold';
+                        font-size: 0.563em;
+                        color: var(--white);
+                    }
+
+                    .date,
+                    .more {
+                        background: #d13f4a;
+                    }
+
+                    .views {
+                        background: #469134;
+                    }
+
+                    .twitter {
+                        background: #24cedd;
+                    }
+
+                    .like {
+                        background: #2f81c0;
+                    }
+
+                    .more {
+                        margin-top: 4px;
+                        display: block;
+                        padding: 8px 5px;
+                        font-family: 'Nova Bold';
+                        font-size: 0.625em;
+                        text-align: center;
+                    }
+                }
+
+                .news-line {
+                    padding: 5px 25px;
+                    align-self: flex-start;
+                }
+            }
+        }
+    }
+
+    .aside {
+        background: rgba(#0a0d10, $alpha: .95);
+
+        .category {
+            margin-top: 15px;
+            padding: 18px;
+            font-family: 'Nova Bold';
+            color: #999999;
+            background: #181818;
+            border-right: 2px solid var(--red);
+        }
+
+        .sp {
+            height: 40px;
+            color: var(--white);
+            
+            .sp-logo {
+                align-self: center;
+            }
+
+            .sp-name {
+                font-size: 'Nova Bold';
+                align-self: center;
+            }
+        }
+
+        .sp-2 {
+            background: #16181a;
+        }
+
+        .video {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .div {
+            margin: 8px 0;
+            text-align: right;
+
+            .div-name {
+                font-family: 'Nova Bold';
+                font-size: 0.813em;
+                color: var(--white);
+            }
+
+            .div-link {
+                font-family: 'Nova Bold';
+                font-size: 0.625em;
+                color: var(--red);
+            }
+        }
+
+        .ads {
+            margin: 8px auto;
+            display: block;
+        }
+
+        .gallery {
+            margin: 0 auto;
+            text-align: center;
+
+            .gal {
+                margin: 5px;
+            }
+        }
+
+        .stream {
+            margin-top: 10px;
+            text-align: center;
+
+            .stream-info {
+                color: var(--white);
+
+                .nick {
+                    font-family: 'Nova Bold';
+                    font-size: 0.813em;
+                    color: var(--red);
+                }
+
+                .do {
+                    font-family: 'Nova';
+                    font-size: 0.625em;
+                }
+
+                .game {
+                    font-size: 'Nova Bold';
+                    font-size: 0.813em;
+                }
+            }
+        }
+
+        .tweet {
+            margin: 0 auto;
+            padding-top: 10px;
+
+            .tweet-cont {
+                text-align: center;
+
+                .tweet-img {
+                    margin-right: 10px;
+                    display: block;
+                    align-self: flex-start;
+                }
+
+                .message {
+                    display: block;
+                    font-family: 'Nova';
+                    font-size: 0.625em;
+                    color: var(--white);
+                }
+
+                .who,
+                .time {
+                    font-family: 'Nova';
+                    font-size: 0.625em;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    
+    .header {
+
+        .logo {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    }
+
+    .news-sec {
+
+        .aside {
+            margin-top: 20px;
+    
+            .tweet {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header {
+
+        .nav {
+            padding-left: 10px;
+            padding-right: 10px;
+            
+            .nav-item a {
+                font-size: 0.6em;
+            }
+        }
+    }
+
+    .lnews-sec .lnews-block .lnews-disc {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .lnews-sec .lnews-block .lnews-title {
+        font-size: 1.4em;
+    }
+}
