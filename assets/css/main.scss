@@ -5,6 +5,11 @@
     --scolor: #FE9700;
 }
 
+::selection {
+    color: var(--white);
+    background: var(--black);
+}
+
 body {
     max-width: 100%;
     overflow-x: hidden;
