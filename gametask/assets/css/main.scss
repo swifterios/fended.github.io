@@ -639,6 +639,7 @@ a {
             .item_actions {
                 display: flex;
                 justify-content: space-around;
+                padding-top: 15px;
 
                 .in_cart {
                     width: 25%;
@@ -698,7 +699,7 @@ a {
                 .cart_num {
                     font-size: 11px;
                     color: #ffffff;
-                    width: 34px;
+                    width: 28px;
                     background: #202126;
                     border-radius: 2px;
                     border: 0;
@@ -707,13 +708,12 @@ a {
                 }
 
                 .plus_minus {
-                    display: flex;
-                    flex-direction: column;
 
                     .cart_num_plus,
                     .cart_num_minus {
                         align-self: center;
                         font-size: 10px;
+                        font-weight: 600;
                         color: #687585;
                         padding: 0;
                         text-align: center;

@@ -655,6 +655,7 @@ a:hover {
 .content .shop .item_block .item_actions {
   display: flex;
   justify-content: space-around;
+  padding-top: 15px;
 }
 
 .content .shop .item_block .item_actions .in_cart {
@@ -708,7 +709,7 @@ a:hover {
 .content .shop .csgo_block .item_actions .cart_num {
   font-size: 11px;
   color: #ffffff;
-  width: 34px;
+  width: 28px;
   background: #202126;
   border-radius: 2px;
   border: 0;
@@ -716,15 +717,11 @@ a:hover {
   text-align: center;
 }
 
-.content .shop .csgo_block .item_actions .plus_minus {
-  display: flex;
-  flex-direction: column;
-}
-
 .content .shop .csgo_block .item_actions .plus_minus .cart_num_plus,
 .content .shop .csgo_block .item_actions .plus_minus .cart_num_minus {
   align-self: center;
   font-size: 10px;
+  font-weight: 600;
   color: #687585;
   padding: 0;
   text-align: center;
