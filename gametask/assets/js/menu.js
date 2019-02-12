@@ -11,4 +11,21 @@ logo_before.addEventListener('click', function() {
 });
 
 let leftblock = document.getElementById('laside');
-leftblock.style.height = window.innerHeight + 'px';
+leftblock.style.height = window.innerHeight + 40 + 'px';
+
+let plus = document.getElementById('plus'),
+minus = document.getElementById('minus'),
+cart_num = document.getElementById('cart_num');
+plus.addEventListener('click',function() {
+    cart_num.value++;
+});
+
+
+minus.addEventListener('click',function() {
+    if(cart_num.value == 0) {
+        cart_num.value = 0;
+    }else {
+
+        cart_num.value--;
+    }
+});

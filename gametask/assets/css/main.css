@@ -433,7 +433,7 @@ a:hover {
 
 .content .help-panel .stack .stack_checbox + label {
   position: relative;
-  padding: 0 0 0 60px;
+  padding: 0 0 0 40px;
   cursor: pointer;
 }
 
@@ -442,7 +442,7 @@ a:hover {
   position: absolute;
   top: 2px;
   left: 0;
-  width: 40px;
+  width: 32px;
   height: 15px;
   border-radius: 13px;
   background: inherit;
@@ -469,7 +469,7 @@ a:hover {
 }
 
 .content .help-panel .stack .stack_checbox:checked + label:after {
-  left: 26px;
+  left: 18px;
 }
 
 .content .help-panel .stack .stack_checbox:focus + label:before {
@@ -588,7 +588,9 @@ a:hover {
   transform: skewX(-5deg);
   padding: 0 5px;
   align-self: center;
-  background: #2E5C7B;
+  background: linear-gradient(69.57deg, rgba(37, 169, 243, 0.34) 1.7%, rgba(37, 169, 243, 0.212) 100.25%);
+  border: 0.45331px solid rgba(37, 169, 243, 0.69);
+  box-sizing: border-box;
   border-radius: 1.81323px;
 }
 
