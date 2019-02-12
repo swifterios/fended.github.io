@@ -585,6 +585,7 @@ a:hover {
   padding: 0 5px;
   align-self: center;
   background: #2E5C7B;
+  border-radius: 1.81323px;
 }
 
 .content .shop .item_block .item_desc .desc_size {
@@ -676,11 +677,19 @@ a:hover {
 }
 
 .content .shop .csgo_block .lm {
-  display: flex;
+  position: relative;
+  align-self: center;
+}
+
+.content .shop .csgo_block .lm .lm_img {
+  align-self: center;
 }
 
 .content .shop .csgo_block .lm .counter {
-  margin-left: auto;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  align-self: center;
   font-size: 13px;
   font-weight: 600;
 }
@@ -716,11 +725,11 @@ a:hover {
 }
 
 .content .shop .csgo_block .item_actions .plus_minus .cart_num_plus {
-  margin-top: 2px;
+  padding-top: 2px;
 }
 
 .content .shop .csgo_block .item_actions .plus_minus .cart_num_minus {
-  margin-top: 1px;
+  padding-top: 1px;
 }
 
 .content .shop .item_block:nth-child(7n+1) {
