@@ -406,6 +406,7 @@ a {
         }
 
         .stack {
+            padding-right: 0;
             font-size: 12px;
             align-self: center;
 
@@ -470,6 +471,7 @@ a {
         }
 
         .search_block {
+            padding: 0;
 
             .search {
                 width: 100%;
@@ -576,7 +578,7 @@ a {
                         background: linear-gradient(69.57deg, rgba(37, 169, 243, 0.34) 1.7%, rgba(37, 169, 243, 0.212) 100.25%);
                         border: 0.453308px solid rgba(37, 169, 243, 0.69);
                         box-sizing: border-box;
-                        border-radius: 1.81323px
+                        border-radius: 1.81323px;
                     }
                 }
 
@@ -671,7 +673,7 @@ a {
         }
 
         .csgo_block {
-            
+
             .lm {
                 position: relative;
                 align-self: center;

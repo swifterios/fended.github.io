@@ -420,6 +420,7 @@ a:hover {
 }
 
 .content .help-panel .stack {
+  padding-right: 0;
   font-size: 12px;
   align-self: center;
 }
@@ -482,6 +483,10 @@ a:hover {
 
 .content .help-panel .stack .stack_label {
   margin-bottom: 0;
+}
+
+.content .help-panel .search_block {
+  padding: 0;
 }
 
 .content .help-panel .search_block .search {
