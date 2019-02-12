@@ -666,9 +666,10 @@ a {
         .csgo_block {
 
             .lm {
-
+                display: flex;
+                
                 .counter {
-                    margin-left: 35px;
+                    margin-left: auto;
                     font-size: 13px;
                     font-weight: 600;
                 }

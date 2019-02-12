@@ -675,8 +675,12 @@ a:hover {
   cursor: pointer;
 }
 
+.content .shop .csgo_block .lm {
+  display: flex;
+}
+
 .content .shop .csgo_block .lm .counter {
-  margin-left: 35px;
+  margin-left: auto;
   font-size: 13px;
   font-weight: 600;
 }
