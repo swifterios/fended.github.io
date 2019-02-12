@@ -146,6 +146,10 @@ body {
     }
 }
 
+.left_block {
+    padding: 0;
+}
+
 
 .item_info {
     padding-top: 90px;
@@ -158,7 +162,7 @@ body {
     }
 
     .slider_block {
-        
+        padding: 0;
 
         .main_slide {
             margin-bottom: 20px;
@@ -173,10 +177,12 @@ body {
         }
 
         .sec_slides {
+            padding: 0;
             display: flex;
             justify-content: space-between;
 
             .sec_slide {
+                margin-right: 1px;
                 padding: 0;
                 background: #323740;
                 border: 1.14637px solid rgba(136, 146, 163, 0.72);
@@ -186,6 +192,7 @@ body {
                     height: auto;
                 }
             }
+
         }
     }
 
@@ -218,7 +225,7 @@ body {
     .item_photos {
         flex-wrap: wrap;
         width: 100%;
-        margin-top: 30px;
+        margin-top: 45px;
         padding: 15px 0;
         background: radial-gradient(83.60px at 49.83% 40.39%, rgba(41, 46, 54, 0.8624) 0%, rgba(57, 64, 75, 0.98) 100%);
         backdrop-filter: blur(45.8547px);
@@ -246,15 +253,19 @@ body {
     }
 
     .right_block {
-        
+        margin-left: 25px;
+
         .block_type {
+            padding: 0;
 
             .item_type {
+                padding: 0;
                 font-size: 14px;
                 color: #687585;
             }
 
             .item_header {
+                padding: 0;
                 margin-top: 15px;
                 margin-bottom: 15px;
                 font-size: 18px;
@@ -266,6 +277,7 @@ body {
             }
 
             .item_avaliable {
+                padding: 0;
                 font-size: 14px;
                 color: #687585;
             }
@@ -275,9 +287,12 @@ body {
         .hashtags {
             margin-top: 10px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
 
             .hashtag {
+                margin-right: 4px;
+                font-size: 14px;
+                color: #616E7F;
                 align-self: center;
                 padding: 5px 10px;
                 border: 0.573183px solid #495261;
@@ -286,7 +301,7 @@ body {
 
         .item_desc {
             margin-top: 25px;
-            padding: 25px;
+            padding: 33.4px 25px;
             font-size: 14px;
             color: #687585;
             background: rgba(39, 43, 51, 0.64);
@@ -358,7 +373,7 @@ body {
         }
 
         .other_trades {
-            margin-top: 40px;
+            margin-top: 30px;
             padding: 20px;
             background: radial-gradient(83.60px at 49.83% 40.39%, rgba(41, 46, 54, 0.8624) 0%, rgba(57, 64, 75, 0.98) 100%);
             backdrop-filter: blur(45.8547px);
@@ -446,6 +461,7 @@ body {
                         background: linear-gradient(258.46deg, #687585 0.52%, #505C69 99.79%);
                         border-radius: 2.07863px;
                         border: 0;
+                        box-shadow: 1px -1px 3px #A5B3C3;
 
                         &:hover {
                             cursor: pointer;
