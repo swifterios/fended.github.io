@@ -33,6 +33,8 @@ a {
 }
 
 .header {
+    padding-top: 0.85px;
+    padding-bottom: 0.85px;
     background: var(--menucl);
 
     .menu {
@@ -467,7 +469,7 @@ a {
 
             .search {
                 width: 100%;
-                padding: 18px;
+                padding: 16.6px;
                 font-size: 12px;
                 color: rgba(172, 194, 221, 0.3);
                 background: rgba(32, 33, 38, 0.47);
@@ -537,6 +539,7 @@ a {
                 margin-top: 10px;
 
                 .item_img {
+                    margin: 0;
                     width: auto;
                     height: 88px;
                     margin: 0 auto;
@@ -562,7 +565,7 @@ a {
                     color: var(--textcolor);
 
                     .sale {
-
+                        font-size: 11px;
                         transform: skewX(-5deg);
                         padding: 0 5px;
                         align-self: center;
@@ -655,6 +658,60 @@ a {
                     
                     &:hover {
                         cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .csgo_block {
+
+            .lm {
+
+                .counter {
+                    margin-left: 35px;
+                    font-size: 13px;
+                    font-weight: 600;
+                }
+            }
+
+
+            .item_actions {
+
+                .cart_num {
+                
+                    width: 35px;
+                    background: #202126;
+                    border-radius: 2px;
+                    border: 0;
+                    color: var(--textcolor);
+                    text-align: center; 
+                }
+
+                .plus_minus {
+                    display: flex;
+                    flex-direction: column;
+
+                    .cart_num_plus,
+                    .cart_num_minus {
+                        align-self: center;
+                        font-size: 10px;
+                        color: #687585;
+                        padding: 0;
+                        text-align: center;
+                        background: rgba(54, 55, 64, 0.44);
+                        border-radius: 0px 2px 0px 0px;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .cart_num_plus {
+                        margin-top: 2px;
+                    }
+
+                    .cart_num_minus {
+                        margin-top: 1px;
                     }
                 }
             }
@@ -1078,4 +1135,94 @@ a {
     }
 }
 
+.health_checkbox[type="checkbox"]:checked, 
+.health_checkbox[type="checkbox"]:not(:checked), 
+.health_checkbox[type="radio"]:checked, 
+.health_checkbox[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
+}
 
+.health_checkbox[type="checkbox"]:checked + label, 
+.health_checkbox[type="checkbox"]:not(:checked) + label, 
+.health_checkbox[type="radio"]:checked + label, 
+.health_checkbox[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.health_checkbox[type="checkbox"]:checked + label:before, 
+.health_checkbox[type="checkbox"]:not(:checked) + label:before,
+.health_checkbox[type="radio"]:checked + label:before, 
+.health_checkbox[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+.health_checkbox[type="checkbox"]:checked + label:before, 
+.health_checkbox[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+.health_checkbox[type="radio"]:checked + label:before, 
+.health_checkbox[type="radio"]:not(:checked) + label:before {
+    border-radius: 100%;
+}
+
+.health_checkbox[type="checkbox"]:checked + label:after, 
+.health_checkbox[type="checkbox"]:not(:checked) + label:after, 
+.health_checkbox[type="radio"]:checked + label:after, 
+.health_checkbox[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.health_checkbox[type="checkbox"]:checked + label:after, 
+.health_checkbox[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #e145a3;
+    border-bottom: 4px solid #e145a3;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.health_checkbox[type="radio"]:checked + label:after, 
+.health_checkbox[type="radio"]:not(:checked) + label:after {
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #e145a3;
+}
+
+.health_checkbox[type="checkbox"]:not(:checked) + label:after, 
+.health_checkbox[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+.health_checkbox[type="checkbox"]:checked + label:after, 
+.health_checkbox[type="radio"]:checked + label:after {
+    opacity: 1;
+}
