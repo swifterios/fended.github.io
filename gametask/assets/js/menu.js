@@ -11,7 +11,10 @@ logo_before.addEventListener('click', function() {
 });
 
 let leftblock = document.getElementById('laside');
-leftblock.style.height = window.innerHeight + 40 + 'px';
+
+    leftblock.style.height = document.body.clientHeight - 70 + 'px';
+
+
 
 let plus = document.getElementById('plus'),
 minus = document.getElementById('minus'),
