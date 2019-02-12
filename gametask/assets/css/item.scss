@@ -613,3 +613,13 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 1220px) {
+    .left_block {
+        margin-left: 0;
+    }
+
+    .right_block {
+        margin-left: 0;
+    }
+}
