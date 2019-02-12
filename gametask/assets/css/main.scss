@@ -350,6 +350,10 @@ a {
             align-content: center;
 
             .checkbox_label {
+                align-self: center;
+                font-size: 12px;
+                font-weight: 600;
+                color: var(--textcolor);
                 margin: 0;
             }
 
@@ -688,6 +692,8 @@ a {
             .item_actions {
 
                 .cart_num {
+                    font-size: 11px;
+                    color: #ffffff;
                     width: 35px;
                     background: #202126;
                     border-radius: 2px;
@@ -1172,8 +1178,8 @@ a {
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     border: 1px solid #dddddd;
     background-color: #ffffff;
 }

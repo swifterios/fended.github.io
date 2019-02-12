@@ -9,3 +9,6 @@ logo_in.addEventListener('click', function() {
 logo_before.addEventListener('click', function() {
     menu.style.display = 'block';
 });
+
+let leftblock = document.getElementById('laside');
+leftblock.style.height = window.innerHeight + 'px';
