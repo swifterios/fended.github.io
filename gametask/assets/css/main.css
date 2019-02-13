@@ -400,6 +400,7 @@ a:hover {
   padding: 10.1px;
   background: radial-gradient(101.3px at 49.83% 40.39%, rgba(41, 46, 54, 0.8624) 0%, rgba(57, 64, 75, 0.98) 100%);
   backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
 }
 
 .content .help-panel .icons {
@@ -701,13 +702,14 @@ a:hover {
 
 .content .shop .item_block .item_actions {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 5px;
   background: linear-gradient(196.91deg, #303741 0%, #353C47 100%);
   border-radius: 2px;
 }
 
 .content .shop .item_block .item_actions .in_cart {
+  margin-right: 3px;
   width: 25%;
   border: 0;
   outline: none;
