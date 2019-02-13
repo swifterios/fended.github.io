@@ -166,8 +166,7 @@ body {
 .item_info .slider_block {
   margin-top: 100px;
   background: rgba(39, 43, 51, 0.64);
-  padding: 0;
-  padding-right: 6px;
+  padding: 0 6px;
 }
 
 .item_info .slider_block .main_slide {
@@ -189,7 +188,7 @@ body {
 .item_info .slider_block .sec_slides {
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .item_info .slider_block .sec_slides .sec_slide {
@@ -197,7 +196,8 @@ body {
   margin-right: 2px;
   padding: 0;
   background: #323740;
-  border: 1.14637px solid rgba(136, 146, 163, 0.72);
+  border: 1px solid rgba(136, 146, 163, 0.72);
+  box-sizing: border-box;
 }
 
 .item_info .slider_block .sec_slides .sec_slide .slide_secimg {
@@ -567,7 +567,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% + 1px);
   background: rgba(39, 43, 51, 0.6);
 }
 
