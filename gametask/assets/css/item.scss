@@ -243,7 +243,7 @@ body {
     .item_photos {
         flex-wrap: wrap;
         width: 100%;
-        margin-top: 44px;
+        margin-top: 30px;
         padding: 15px 0;
         background: radial-gradient(83.60px at 49.83% 40.39%, rgba(41, 46, 54, 0.8624) 0%, rgba(57, 64, 75, 0.98) 100%);
         backdrop-filter: blur(45.8547px);
@@ -368,7 +368,7 @@ body {
                     background: linear-gradient(258.46deg, #687585 0.52%, #505C69 99.79%);
                     border-radius: 2.07863px;
                     border: 0;
-                    box-shadow: 1px -1px 3px #A5B3C3;
+                    box-shadow: 0 -1px 1px #A5B3C3;
 
                     &:hover {
                         cursor: pointer;
@@ -385,7 +385,7 @@ body {
                     border-radius: 2.07863px;
                     border: 0;
                     background: linear-gradient(45deg, #264de4, #02ecff);
-                    box-shadow: 1px -1px 3px #45BCFF;
+                    box-shadow: 0 -1px 1px #45BCFF;
 
                     &:hover {
                         cursor: pointer;
