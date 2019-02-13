@@ -150,10 +150,17 @@ body {
 .item_info {
   padding-top: 90px;
   padding-right: 0;
+  background: url(../img/bg-section.png) no-repeat top;
 }
 
 .item_info .video .video_text {
+  align-items: center;
+  display: flex;
   font-size: 14px;
+}
+
+.item_info .video .video_text img {
+  margin-right: 7px;
 }
 
 .item_info .slider_block {
@@ -253,6 +260,7 @@ body {
 
 .item_info .right_block {
   margin-left: 25px;
+  padding: 0;
 }
 
 .item_info .right_block .block_type {

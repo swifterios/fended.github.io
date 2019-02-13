@@ -155,11 +155,18 @@ body {
 .item_info {
     padding-top: 90px;
     padding-right: 0;
+    background: url(../img/bg-section.png) no-repeat top;
 
     .video {
 
         .video_text {
+            align-items: center;
+            display: flex;
             font-size: 14px;
+
+            img {
+                margin-right: 7px;
+            }
         }
     }
 
@@ -265,6 +272,7 @@ body {
 
     .right_block {
         margin-left: 25px;
+        padding: 0;
 
         .block_type {
             padding: 0;
