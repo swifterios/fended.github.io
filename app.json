@@ -1,0 +1,19 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/cursedseal/VCoinX"
+    }
+  ],
+  "env": {
+    "": "1111"
+  },
+  "formation": {
+  },
+  "name": "fended.github.io",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
